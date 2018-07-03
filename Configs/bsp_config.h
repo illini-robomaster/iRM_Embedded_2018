@@ -70,8 +70,9 @@
 #define BSP_BUZZER_CHANNEL  TIM_CHANNEL_1
 
 /* ==== bsp_oled config ==== */
-#define BSP_OLED_ADC                hadc1
-#define BSP_OLED_ADC_CHANNEL        0
+#define BSP_OLED_PORT           hspi1
+#define BSP_OLED_ADC            hadc1
+#define BSP_OLED_ADC_CHANNEL    0
 
 /* ===== General Utility ===== */
 #define ON      1
