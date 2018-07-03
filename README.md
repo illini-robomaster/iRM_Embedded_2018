@@ -48,7 +48,7 @@ git clone --recursive https://github.com/illini-robomaster/iRM_Embedded_2018.git
 * [OpenOCD]() - optional for debug purposes
 
 ## Tutorials
-* [How to install ARM Toolchain](https://github.com/NickelLiang/iRM_Embedded/tree/master/tutorials/ARM_TOOLCHAIN.md)
-* [How to compile the code](https://github.com/NickelLiang/iRM_Embedded/tree/master/tutorials/COMPILE.md)
-* [How to flash binary files onto the micro controller](https://github.com/NickelLiang/iRM_Embedded/tree/master/tutorials/FLASH.md)
-* [How to use gbd with on chip debugger](https://github.com/NickelLiang/iRM_Embedded/tree/master/tutorials/DEBUG.md)
+* [How to install ARM Toolchain](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/ARM_TOOLCHAIN.md)
+* [How to compile the code](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/COMPILE.md)
+* [How to flash binary files onto the micro controller](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/FLASH.md)
+* [How to use gbd with on chip debugger](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/DEBUG.md)

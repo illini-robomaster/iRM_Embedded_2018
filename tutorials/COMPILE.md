@@ -1,7 +1,7 @@
 # How To Compile This Project
 
 ### Prerequisites
-* see [How to install ARM Toolchain](https://github.com/NickelLiang/iRM_Embedded/blob/master/tutorials/ARM_TOOLCHAIN.md) first
+* see [How to install ARM Toolchain](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/ARM_TOOLCHAIN.md) first
 * make sure you have **CMake 3.11.10 or later** installed
 
 ## Compile Method 1 - Makefile
@@ -29,4 +29,4 @@
 Note: before switching to building a different robot, your should clean up your build directory by `rm -rf build/`
 
 ## What's Next?
-[How To Flash These Compiled Binaries](https://github.com/NickelLiang/iRM_Embedded/blob/master/tutorials/FLASH.md)
+[How To Flash These Compiled Binaries](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/COMPILE.md)

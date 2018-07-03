@@ -6,7 +6,7 @@ simply by enabling the debug flag when compiling the code - `make infantry1 DEBU
 ## ARM GDB
 
 ### Dependency
-* [ARM Toolchain](https://github.com/NickelLiang/iRM_Embedded/blob/master/tutorials/ARM_TOOLCHAIN.md)
+* [ARM Toolchain](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/ARM_TOOLCHAIN.md)
 * [openocd](http://openocd.org/)
 
 ### Debug Steps

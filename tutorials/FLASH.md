@@ -1,5 +1,5 @@
 # How To Flash Binaries On To the MCU
-see [How to compile this project](https://github.com/NickelLiang/iRM_Embedded/blob/master/tutorials/COMPILE.md) before trying to flash
+see [How to compile this project](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/COMPILE.md) before trying to flash
 
 ## Dependency
 * [st-link](https://github.com/texane/stlink) - just follow their tutorial to install this tool
