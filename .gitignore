@@ -3,6 +3,9 @@
 *.d
 *.DS_Store
 *.osx.project
+.project
+.cproject
+.mxproject
 
 # Object files
 *.o
