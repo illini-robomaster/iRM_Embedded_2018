@@ -56,14 +56,14 @@
     #define PITCH_LOW_LIMIT         5000
     #define PITCH_HIGH_LIMIT        7700
     /* chassis related */
-    #define MAX_TURN_SPEED          4000
-    #define MAX_LINEAR_SPEED        4500
-    #define MAX_SPEED               9000
+    #define MAX_TURN_SPEED          5000
+    #define MAX_LINEAR_SPEED        9000
+    #define MAX_SPEED               14000
     #define CHS_KP                  10
     #define CHS_KI                  0.9f
     #define CHS_KD                  0
     #define CHS_INT_LIM             200
-    #define ROTATE_KP               3.9f
+    #define ROTATE_KP               5.0f
 
 #elif defined(HERO)
     #define MEASURED_MIDDLE_YAW     5990

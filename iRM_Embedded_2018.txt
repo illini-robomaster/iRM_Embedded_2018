@@ -1,0 +1,160 @@
+Configuration	iRM_Embedded_2018
+STM32CubeMX 	4.26.0
+Date	07/11/2018
+MCU	STM32F427IIHx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN6	ADC1_IN6	PA6
+ADC1	IN10	ADC1_IN10	PC0
+ADC1	IN11	ADC1_IN11	PC1
+CAN1	Master	CAN1_RX	PD0
+CAN1	Master	CAN1_TX	PD1
+CAN2	Slave	CAN2_RX	PB12
+CAN2	Slave	CAN2_TX	PB6
+I2C2	I2C	I2C2_SCL	PF1
+I2C2	I2C	I2C2_SDA	PF0
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0/OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1/OSC_OUT
+SDIO	SD 4 bits Wide bus	SDIO_CK	PC12
+SDIO	SD 4 bits Wide bus	SDIO_CMD	PD2
+SDIO	SD 4 bits Wide bus	SDIO_D0	PC8
+SDIO	SD 4 bits Wide bus	SDIO_D1	PC9
+SDIO	SD 4 bits Wide bus	SDIO_D2	PC10
+SDIO	SD 4 bits Wide bus	SDIO_D3	PC11
+SPI1	Full-Duplex Master	SPI1_MISO	PB4
+SPI1	Full-Duplex Master	SPI1_MOSI	PA7
+SPI1	Full-Duplex Master	SPI1_SCK	PB3
+SPI5	Full-Duplex Master	SPI5_MISO	PF8
+SPI5	Full-Duplex Master	SPI5_MOSI	PF9
+SPI5	Full-Duplex Master	SPI5_SCK	PF7
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	TIM3	SYS_VS_tim3	VP_SYS_VS_tim3
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+TIM1	PWM Generation CH1	TIM1_CH1	PA8
+TIM1	PWM Generation CH4	TIM1_CH4	PE14
+TIM4	Internal Clock	TIM4_VS_ClockSourceINT	VP_TIM4_VS_ClockSourceINT
+TIM4	PWM Generation CH1	TIM4_CH1	PD12
+TIM4	PWM Generation CH2	TIM4_CH2	PD13
+TIM4	PWM Generation CH3	TIM4_CH3	PD14
+TIM4	PWM Generation CH4	TIM4_CH4	PD15
+TIM5	Internal Clock	TIM5_VS_ClockSourceINT	VP_TIM5_VS_ClockSourceINT
+TIM5	PWM Generation CH1	TIM5_CH1	PH10
+TIM5	PWM Generation CH2	TIM5_CH2	PH11
+TIM5	PWM Generation CH3	TIM5_CH3	PH12
+TIM5	PWM Generation CH4	TIM5_CH4	PI0
+TIM12	Internal Clock	TIM12_VS_ClockSourceINT	VP_TIM12_VS_ClockSourceINT
+TIM12	PWM Generation CH1	TIM12_CH1	PH6
+TIM12	PWM Generation CH2	TIM12_CH2	PH9
+UART7	Asynchronous	UART7_RX	PE7
+UART7	Asynchronous	UART7_TX	PE8
+UART8	Asynchronous	UART8_RX	PE0
+UART8	Asynchronous	UART8_TX	PE1
+USART1	Asynchronous	USART1_RX	PB7
+USART1	Asynchronous	USART1_TX	PA9
+USART3	Asynchronous	USART3_RX	PD9
+USART3	Asynchronous	USART3_TX	PD8
+USART6	Asynchronous	USART6_RX	PG9
+USART6	Asynchronous	USART6_TX	PG14
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+A3	PE1	UART8_TX	
+A4	PE0	UART8_RX	
+A5	PB8	GPIO_EXTI8	
+A7	PG14	USART6_TX	
+A8	PG13	GPIO_Output	LASER
+A9	PB4	SPI1_MISO	
+A10	PB3	SPI1_SCK	OLED_SCK
+A12	PC12	SDIO_CK	
+A14	PA14	SYS_JTCK-SWCLK	
+A15	PA13	SYS_JTMS-SWDIO	
+B4	PB9	GPIO_Output	OLED_DC
+B5	PB7	USART1_RX	
+B6	PB6	CAN2_TX	
+B12	PD0	CAN1_RX	
+B13	PC11	SDIO_D3	
+B14	PC10	SDIO_D2	
+C10	PG9	USART6_RX	
+C12	PD1	CAN1_TX	
+D12	PD2	SDIO_CMD	
+E2	PF0	I2C2_SDA	
+E14	PI0	TIM5_CH4	
+E15	PA9	USART1_TX	
+F4	PH2	GPIO_Output	
+F14	PC9	SDIO_D1	
+F15	PA8	TIM1_CH1	
+G1	PH0/OSC_IN	RCC_OSC_IN	
+G4	PH3	GPIO_Output	
+G14	PC8	SDIO_D0	
+H1	PH1/OSC_OUT	RCC_OSC_OUT	
+H3	PF1	I2C2_SCL	
+H4	PH4	GPIO_Output	MAGNET
+H14	PG8	GPIO_Output	
+J4	PH5	GPIO_Output	
+J14	PG7	GPIO_Output	
+J15	PG6	GPIO_Output	
+K1	PF7	SPI5_SCK	
+K2	PF6	GPIO_Output	
+K12	PH12	TIM5_CH3	
+K13	PG5	GPIO_Output	
+K14	PG4	GPIO_Output	
+K15	PG3	GPIO_Output	
+L2	PF9	SPI5_MOSI	
+L3	PF8	SPI5_MISO	
+L12	PH11	TIM5_CH2	
+L13	PH10	TIM5_CH1	
+L14	PD15	TIM4_CH4	
+L15	PG2	GPIO_Output	
+M2	PC0	ADC1_IN10	
+M3	PC1	ADC1_IN11	
+M6	PB2/BOOT1	GPIO_Input	
+M7	PG1	GPIO_Output	
+M11	PH6	TIM12_CH1	BEEP
+M13	PH9	TIM12_CH2	
+M14	PD14	TIM4_CH3	
+M15	PD13	TIM4_CH2	
+N13	PD12	TIM4_CH1	
+P3	PA6	ADC1_IN6	OLED_BUTTON
+P8	PE8	UART7_TX	
+P10	PE11	GPIO_Output	LED_RED
+P11	PE14	TIM1_CH4	
+P12	PB12	CAN2_RX	
+P14	PD9	USART3_RX	
+P15	PD8	USART3_TX	
+R3	PA7	SPI1_MOSI	OLED_MOSI
+R7	PF14	GPIO_Output	LED_GREEN
+R8	PE7	UART7_RX	
+R11	PE15	GPIO_Input	SD_EXTI
+R12	PB10	GPIO_Output	OLED_RST
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : iRM_Embedded_2018
+Project Folder : /Users/alvin/iRM_Embedded_2018
+Toolchain / IDE : SW4STM32
+Firmware Package Name and Version : STM32Cube FW_F4 V1.21.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

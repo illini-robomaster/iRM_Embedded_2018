@@ -66,6 +66,8 @@
 #define OLED_SCK_GPIO_Port GPIOB
 #define OLED_DC_Pin GPIO_PIN_9
 #define OLED_DC_GPIO_Port GPIOB
+#define MAGNET_Pin GPIO_PIN_4
+#define MAGNET_GPIO_Port GPIOH
 #define BEEP_Pin GPIO_PIN_6
 #define BEEP_GPIO_Port GPIOH
 #define OLED_BUTTON_Pin GPIO_PIN_6
