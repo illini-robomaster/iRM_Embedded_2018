@@ -60,6 +60,8 @@ void DMA1_Stream3_IRQHandler(void);
 void DMA1_Stream4_IRQHandler(void);
 void DMA1_Stream6_IRQHandler(void);
 void ADC_IRQHandler(void);
+void CAN1_TX_IRQHandler(void);
+void CAN1_RX0_IRQHandler(void);
 void TIM3_IRQHandler(void);
 void USART1_IRQHandler(void);
 void USART3_IRQHandler(void);
@@ -72,6 +74,7 @@ void DMA2_Stream6_IRQHandler(void);
 void DMA2_Stream7_IRQHandler(void);
 void USART6_IRQHandler(void);
 void UART7_IRQHandler(void);
+void UART8_IRQHandler(void);
 
 #ifdef __cplusplus
 }

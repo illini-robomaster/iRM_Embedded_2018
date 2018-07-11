@@ -77,6 +77,8 @@ include_directories(Applications/Libraries)
 include_directories(Applications/Tasks)
 include_directories(Applications/Tests)
 include_directories(Applications/Third_Party_Libraries)
+include_directories(Applications/Third_Party_Libraries/VL53L0X/core/inc)
+include_directories(Applications/Third_Party_Libraries/VL53L0X/platform/inc)
 
 add_executable(${PROJECT_NAME}.elf ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME}.elf m)
