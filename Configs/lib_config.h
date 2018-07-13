@@ -29,6 +29,7 @@
     #define PITCH_HIGH_LIMIT        6200
     /* chassis related */
     #define MAX_TURN_SPEED          3000
+    #define EVASIVE_TURN_SPEED      3000
     #define MAX_LINEAR_SPEED        8000
     #define MAX_SPEED               12000
     #define CHS_KP                  10
@@ -51,19 +52,21 @@
     #define INIT_MIDDLE_PITCH       7000
     #define NORMAL_MIDDLE_YAW       400
     #define REVERSE_MIDDLE_YAW      4400
-    #define EVASIVE_LEFTMOST_YAW    0    // no need for evasive mode
-    #define EVASIVE_RIGHTMOST_YAW   0
+    #define HORIZONTAL_MIDDLE_YAW   6520
+    #define EVASIVE_LEFTMOST_YAW    7020
+    #define EVASIVE_RIGHTMOST_YAW   6020
     #define PITCH_LOW_LIMIT         5000
     #define PITCH_HIGH_LIMIT        7700
     /* chassis related */
-    #define MAX_TURN_SPEED          5000
-    #define MAX_LINEAR_SPEED        9000
+    #define MAX_TURN_SPEED          4500
+    #define EVASIVE_TURN_SPEED      2000
+    #define MAX_LINEAR_SPEED        9500
     #define MAX_SPEED               14000
-    #define CHS_KP                  10
+    #define CHS_KP                  8
     #define CHS_KI                  0.9f
-    #define CHS_KD                  0
-    #define CHS_INT_LIM             200
-    #define ROTATE_KP               5.0f
+    #define CHS_KD                  1.0f
+    #define CHS_INT_LIM             100000
+    #define ROTATE_KP               7.5f
 
 #elif defined(HERO)
     #define MEASURED_MIDDLE_YAW     5990
