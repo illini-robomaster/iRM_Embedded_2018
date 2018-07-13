@@ -53,13 +53,13 @@
     #define NORMAL_MIDDLE_YAW       400
     #define REVERSE_MIDDLE_YAW      4400
     #define HORIZONTAL_MIDDLE_YAW   6520
-    #define EVASIVE_LEFTMOST_YAW    7020
-    #define EVASIVE_RIGHTMOST_YAW   6020
+    #define EVASIVE_LEFTMOST_YAW    7520
+    #define EVASIVE_RIGHTMOST_YAW   5520
     #define PITCH_LOW_LIMIT         5000
     #define PITCH_HIGH_LIMIT        7700
     /* chassis related */
     #define MAX_TURN_SPEED          4500
-    #define EVASIVE_TURN_SPEED      2000
+    #define EVASIVE_TURN_SPEED      1800
     #define MAX_LINEAR_SPEED        9500
     #define MAX_SPEED               14000
     #define CHS_KP                  8
