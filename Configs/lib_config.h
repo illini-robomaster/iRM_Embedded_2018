@@ -20,23 +20,34 @@
 #define LIB_CONFIG_H_
 
 #if defined(INFANTRY1)
+    /* shooter related */
+    #define HAS_SHOOTER
+    #define USE_PWM_FLYWHL
+    #define FLYWHL_PWM_TIMER        &htim1
+    #define FLYWHL_LEFT_CHANNEL     4
+    #define FLYWHL_RIGHT_CHANNEL    1
+    #define FLYWHL_TYPE             M2305
+    #define POKER_ID                0x208
+    #define POKER_CAN               CAN1_ID
+    #define POKER_TYPE              M2006
+    #define FLYWHL_OUTPUT           600
     /* gimbal related */
-    #define INIT_MIDDLE_YAW         5990 // these data are measured on infantry1.
-    #define INIT_MIDDLE_PITCH       6000
-    #define EVASIVE_LEFTMOST_YAW    7290
-    #define EVASIVE_RIGHTMOST_YAW   4690
-    #define PITCH_LOW_LIMIT         4800
-    #define PITCH_HIGH_LIMIT        6200
+    #define INIT_MIDDLE_YAW         6400 // these data are measured on infantry1.
+    #define INIT_MIDDLE_PITCH       6500
+    #define EVASIVE_LEFTMOST_YAW    7500
+    #define EVASIVE_RIGHTMOST_YAW   5500
+    #define PITCH_LOW_LIMIT         6000
+    #define PITCH_HIGH_LIMIT        7300
     /* chassis related */
     #define MAX_TURN_SPEED          3000
     #define EVASIVE_TURN_SPEED      3000
     #define MAX_LINEAR_SPEED        8000
     #define MAX_SPEED               12000
-    #define CHS_KP                  10
-    #define CHS_KI                  0.9f
-    #define CHS_KD                  0
-    #define CHS_INT_LIM             200
-    #define ROTATE_KP               2.7f
+    #define CHS_KP                  6.5f
+    #define CHS_KI                  0.5f
+    #define CHS_KD                  1.0f
+    #define CHS_INT_LIM             100000
+    #define ROTATE_KP               3.5f
 
 #elif defined(INFANTRY2)
     #define MEASURED_MIDDLE_YAW     5990
