@@ -80,8 +80,34 @@
     #define ROTATE_KP               3.5f
 
 #elif defined(INFANTRY3)
-    #define MEASURED_MIDDLE_YAW     5990
-    #define MEASURED_MIDDLE_PITCH   6000
+    /* shooter related */
+    #define HAS_SHOOTER
+    #define USE_PWM_FLYWHL
+    #define FLYWHL_PWM_TIMER        &htim1
+    #define FLYWHL_LEFT_CHANNEL     4
+    #define FLYWHL_RIGHT_CHANNEL    1
+    #define FLYWHL_TYPE             M2305
+    #define POKER_ID                0x208
+    #define POKER_CAN               CAN1_ID
+    #define POKER_TYPE              M2006
+    #define FLYWHL_OUTPUT           220
+    /* gimbal related */
+    #define INIT_MIDDLE_YAW         6260 // these data are measured on infantry2.
+    #define EVASIVE_LEFTMOST_YAW    7500
+    #define EVASIVE_RIGHTMOST_YAW   5000
+    #define INIT_MIDDLE_PITCH       4500
+    #define PITCH_LOW_LIMIT         4000
+    #define PITCH_HIGH_LIMIT        5300
+    /* chassis related */
+    #define MAX_TURN_SPEED          3000
+    #define EVASIVE_TURN_SPEED      2000
+    #define MAX_LINEAR_SPEED        4000
+    #define MAX_SPEED               12000
+    #define CHS_KP                  6.5f
+    #define CHS_KI                  0.5f
+    #define CHS_KD                  1.0f
+    #define CHS_INT_LIM             100000
+    #define ROTATE_KP               3.5f
 
 #elif defined(ENGINEERING)
     /* gimbal related */
