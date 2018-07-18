@@ -6,6 +6,8 @@ This repository hosted codes for low level hardware protocol & control algrithms
 
 ```
 git clone --recursive https://github.com/illini-robomaster/iRM_Embedded_2018.git
+cd iRM_Embedded_2018/Applications
+git checkout master #to switch back to master branch from detached HEAD
 ```
 
 ## Important File Structure
