@@ -63,7 +63,7 @@
 #define BSP_POWER_ADC               hadc1
 #define BSP_POWER_V_CHANNEL         0
 #define BSP_POWER_A_CHANNEL         1
-#define BSP_POWER_AVG_FILTER_SIZE   50
+#define BSP_POWER_AVG_FILTER_SIZE   30
 
 /* ==== bsp_buzzer config ==== */
 #define BSP_BUZZER_TIMER    htim12
