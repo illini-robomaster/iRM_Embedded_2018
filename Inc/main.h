@@ -66,8 +66,14 @@
 #define OLED_SCK_GPIO_Port GPIOB
 #define OLED_DC_Pin GPIO_PIN_9
 #define OLED_DC_GPIO_Port GPIOB
-#define MAGNET_Pin GPIO_PIN_4
-#define MAGNET_GPIO_Port GPIOH
+#define MOS_CTL1_Pin GPIO_PIN_2
+#define MOS_CTL1_GPIO_Port GPIOH
+#define MOS_CTL2_Pin GPIO_PIN_3
+#define MOS_CTL2_GPIO_Port GPIOH
+#define MOS_CTL3_Pin GPIO_PIN_4
+#define MOS_CTL3_GPIO_Port GPIOH
+#define MOS_CTL4_Pin GPIO_PIN_5
+#define MOS_CTL4_GPIO_Port GPIOH
 #define BEEP_Pin GPIO_PIN_6
 #define BEEP_GPIO_Port GPIOH
 #define OLED_BUTTON_Pin GPIO_PIN_6

@@ -1,5 +1,5 @@
 /**************************************************************************
- *  Copyright (C) 2018 
+ *  Copyright (C) 2018
  *  Illini RoboMaster @ University of Illinois at Urbana-Champaign.
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -18,6 +18,8 @@
 
 #ifndef LIB_CONFIG_H_
 #define LIB_CONFIG_H_
+
+#include "main.h"
 
 #if defined(INFANTRY1)
     /* shooter related */
@@ -110,6 +112,9 @@
     #define ROTATE_KP               3.5f
 
 #elif defined(ENGINEERING)
+    /* High Voltage Control MOSFET define */
+    #define MAGNET_Pin MOS_CTL3_Pin
+    #define MAGNET_GPIO_Port MOS_CTL3_GPIO_Port
     /* gimbal related */
     #define INIT_MIDDLE_YAW         400
     #define INIT_MIDDLE_PITCH       7000
@@ -132,8 +137,40 @@
     #define ROTATE_KP               7.8f
 
 #elif defined(HERO)
-    #define MEASURED_MIDDLE_YAW     5990
-    #define MEASURED_MIDDLE_PITCH   6000
+    /* shooter related */
+    #define HAS_SHOOTER
+    #define USE_CAN_FLYWHL
+    #define FLYWHL_TYPE             M3508
+    #define POKER_ID                0x208
+    #define POKER_CAN               CAN1_ID
+    #define POKER_TYPE              M2006
+    #define FLYWHL_OUTPUT           220
+    /* High Voltage Control MOSFET define */
+    #define PNEUMATIC_GRAB_EXTEND_Pin       MOS_CTL1_Pin
+    #define PNEUMATIC_GRAB_EXTEND_Port      MOS_CTL1_GPIO_Port
+    #define GRABBER_Pin                     MOS_CTL2_Pin
+    #define GRABBER_Port                    MOS_CTL2_GPIO_Port
+    #define FRONT_LIFT_Pin                  MOS_CTL3_Pin
+    #define FRONT_LIFT_Port                 MOS_CTL3_GPIO_Port
+    #define REAR_LIFT_Pin                   MOS_CTL4_Pin
+    #define REAR_LIFT_Port                  MOS_CTL4_GPIO_Port
+    /* gimbal related */
+    #define INIT_MIDDLE_YAW         6260 // these data are measured on infantry2.
+    #define EVASIVE_LEFTMOST_YAW    7500
+    #define EVASIVE_RIGHTMOST_YAW   5000
+    #define INIT_MIDDLE_PITCH       4500
+    #define PITCH_LOW_LIMIT         4000
+    #define PITCH_HIGH_LIMIT        5300
+    /* chassis related */
+    #define MAX_TURN_SPEED          3000
+    #define EVASIVE_TURN_SPEED      2000
+    #define MAX_LINEAR_SPEED        4000
+    #define MAX_SPEED               12000
+    #define CHS_KP                  6.5f
+    #define CHS_KI                  0.5f
+    #define CHS_KD                  1.0f
+    #define CHS_INT_LIM             100000
+    #define ROTATE_KP               3.5f
 #endif
 
 #define IMU_DT          0.001f    // measurement time interval (in seconds). RTOS should give exact time to me.

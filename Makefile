@@ -1,5 +1,5 @@
 ########################################################################
-#  Copyright (C) 2018 
+#  Copyright (C) 2018
 #  Illini RoboMaster @ University of Illinois at Urbana-Champaign.
 #
 #  This program is free software: you can redistribute it and/or modify
@@ -35,7 +35,7 @@ endif
 .PHONY: clean how remake cmake infantry1 infantry2 infantry3
 
 # Rules to create all
-all: infantry1 infantry2 infantry3 engineering
+all: infantry1 infantry2 infantry3 engineering hero
 
 # Rules to create each robot and inject macros.
 # Do not forget to add cooresponding macros to rm_config.h and CMakeLists.txt
@@ -55,6 +55,10 @@ engineering: ROBOT = -DENGINEERING=ON
 engineering: FILE_NAME = Engineering
 engineering: cmake
 
+hero: ROBOT = -DHERO=ON
+hero: FILE_NAME = hero
+hero: cmake
+
 # Rules to clean
 clean:
 	rm -rf ${BUILD_DIR}
@@ -70,6 +74,7 @@ how:
 	@echo "infantry2: 	Build Infantry2.elf"
 	@echo "infantry3: 	Build Infantry3.elf"
 	@echo "engineering: 	Build Engineering.elf"
+	@echo "hero:		Build hero.elf"
 	@echo ""
 	@echo "Add \"DEBUG=1\" to inject DEBUG macro"
 	@echo "ADD \"RUNTEST=1\" to inject TEST macro"
