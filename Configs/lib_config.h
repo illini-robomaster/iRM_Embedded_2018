@@ -22,7 +22,7 @@
 #include "main.h"
 
 #if defined(INFANTRY1)
-    /* shooter related */
+   /* shooter related */
     #define HAS_SHOOTER
     #define USE_PWM_FLYWHL
     #define FLYWHL_PWM_TIMER        &htim1
@@ -34,12 +34,12 @@
     #define POKER_TYPE              M2006
     #define FLYWHL_OUTPUT           250
     /* gimbal related */
-    #define INIT_MIDDLE_YAW         6400 // these data are measured on infantry1.
-    #define INIT_MIDDLE_PITCH       6500
-    #define EVASIVE_LEFTMOST_YAW    7400
-    #define EVASIVE_RIGHTMOST_YAW   5400
-    #define PITCH_LOW_LIMIT         6000
-    #define PITCH_HIGH_LIMIT        7300
+    #define INIT_MIDDLE_YAW         3150 // these data are measured on infantry2.
+    #define EVASIVE_LEFTMOST_YAW    4150
+    #define EVASIVE_RIGHTMOST_YAW   2150
+    #define INIT_MIDDLE_PITCH       3800
+    #define PITCH_LOW_LIMIT         3300
+    #define PITCH_HIGH_LIMIT        4600
     /* chassis related */
     #define MAX_TURN_SPEED          3000
     #define EVASIVE_TURN_SPEED      3000
@@ -64,12 +64,12 @@
     #define POKER_TYPE              M2006
     #define FLYWHL_OUTPUT           250
     /* gimbal related */
-    #define INIT_MIDDLE_YAW         3150 // these data are measured on infantry2.
-    #define EVASIVE_LEFTMOST_YAW    4150
-    #define EVASIVE_RIGHTMOST_YAW   2150
-    #define INIT_MIDDLE_PITCH       3800
-    #define PITCH_LOW_LIMIT         3300
-    #define PITCH_HIGH_LIMIT        4600
+    #define INIT_MIDDLE_YAW         6400 // these data are measured on infantry1.
+    #define INIT_MIDDLE_PITCH       6500
+    #define EVASIVE_LEFTMOST_YAW    7400
+    #define EVASIVE_RIGHTMOST_YAW   5400
+    #define PITCH_LOW_LIMIT         6000
+    #define PITCH_HIGH_LIMIT        7300
     /* chassis related */
     #define MAX_TURN_SPEED          3000
     #define EVASIVE_TURN_SPEED      3000
