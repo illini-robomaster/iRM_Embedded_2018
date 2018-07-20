@@ -43,7 +43,7 @@
     /* chassis related */
     #define MAX_TURN_SPEED          3000
     #define EVASIVE_TURN_SPEED      3000
-    #define MAX_LINEAR_SPEED        8000
+    #define MAX_LINEAR_SPEED        6000
     #define MAX_SPEED               12000
     #define CHS_KP                  6.5f
     #define CHS_KI                  0.5f
@@ -117,7 +117,7 @@
     #define MAGNET_GPIO_Port MOS_CTL3_GPIO_Port
     /* gimbal related */
     #define INIT_MIDDLE_YAW         400
-    #define INIT_MIDDLE_PITCH       7000
+    #define INIT_MIDDLE_PITCH       5000
     #define NORMAL_MIDDLE_YAW       400
     #define REVERSE_MIDDLE_YAW      4400
     #define HORIZONTAL_MIDDLE_YAW   6520
@@ -130,10 +130,10 @@
     #define EVASIVE_TURN_SPEED      1800
     #define MAX_LINEAR_SPEED        9500
     #define MAX_SPEED               14000
-    #define CHS_KP                  8
+    #define CHS_KP                  7
     #define CHS_KI                  0.9f
     #define CHS_KD                  1.0f
-    #define CHS_INT_LIM             100000
+    #define CHS_INT_LIM             80000
     #define ROTATE_KP               7.8f
 
 #elif defined(HERO)
@@ -155,12 +155,12 @@
     #define REAR_LIFT_Pin                   MOS_CTL4_Pin
     #define REAR_LIFT_Port                  MOS_CTL4_GPIO_Port
     /* gimbal related */
-    #define INIT_MIDDLE_YAW         6260 // these data are measured on infantry2.
-    #define EVASIVE_LEFTMOST_YAW    7500
-    #define EVASIVE_RIGHTMOST_YAW   5000
-    #define INIT_MIDDLE_PITCH       4500
-    #define PITCH_LOW_LIMIT         4000
-    #define PITCH_HIGH_LIMIT        5300
+    #define INIT_MIDDLE_YAW         4650 // these data are measured on infantry2.
+    #define EVASIVE_LEFTMOST_YAW    5400
+    #define EVASIVE_RIGHTMOST_YAW   3900
+    #define INIT_MIDDLE_PITCH       2400
+    #define PITCH_LOW_LIMIT         1600
+    #define PITCH_HIGH_LIMIT        3100
     /* chassis related */
     #define MAX_TURN_SPEED          3000
     #define EVASIVE_TURN_SPEED      2000
