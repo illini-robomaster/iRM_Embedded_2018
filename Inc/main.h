@@ -64,6 +64,9 @@
 #define LASER_GPIO_Port GPIOG
 #define OLED_SCK_Pin GPIO_PIN_3
 #define OLED_SCK_GPIO_Port GPIOB
+#define POKER_IT_Pin GPIO_PIN_4
+#define POKER_IT_GPIO_Port GPIOE
+#define POKER_IT_EXTI_IRQn EXTI4_IRQn
 #define OLED_DC_Pin GPIO_PIN_9
 #define OLED_DC_GPIO_Port GPIOB
 #define MOS_CTL1_Pin GPIO_PIN_2

@@ -32,7 +32,7 @@
     #define POKER_ID                0x208
     #define POKER_CAN               CAN1_ID
     #define POKER_TYPE              M2006
-    #define FLYWHL_OUTPUT           250
+    #define FLYWHL_OUTPUT           200
     /* gimbal related */
     #define INIT_MIDDLE_YAW         3150 // these data are measured on infantry2.
     #define EVASIVE_LEFTMOST_YAW    4150
@@ -42,13 +42,13 @@
     #define PITCH_HIGH_LIMIT        4600
     /* chassis related */
     #define MAX_TURN_SPEED          3000
-    #define EVASIVE_TURN_SPEED      3000
-    #define MAX_LINEAR_SPEED        6000
+    #define EVASIVE_TURN_SPEED      2000
+    #define MAX_LINEAR_SPEED        7000
     #define MAX_SPEED               12000
     #define CHS_KP                  6.5f
-    #define CHS_KI                  0.5f
-    #define CHS_KD                  1.0f
-    #define CHS_INT_LIM             100000
+    #define CHS_KI                  0.7f
+    #define CHS_KD                  1.3f
+    #define CHS_INT_LIM             5000
     #define ROTATE_KP               3.5f
 
 #elif defined(INFANTRY2)
@@ -62,7 +62,7 @@
     #define POKER_ID                0x208
     #define POKER_CAN               CAN1_ID
     #define POKER_TYPE              M2006
-    #define FLYWHL_OUTPUT           250
+    #define FLYWHL_OUTPUT           200
     /* gimbal related */
     #define INIT_MIDDLE_YAW         6400 // these data are measured on infantry1.
     #define INIT_MIDDLE_PITCH       6500
@@ -72,13 +72,13 @@
     #define PITCH_HIGH_LIMIT        7300
     /* chassis related */
     #define MAX_TURN_SPEED          3000
-    #define EVASIVE_TURN_SPEED      3000
-    #define MAX_LINEAR_SPEED        8000
+    #define EVASIVE_TURN_SPEED      2000
+    #define MAX_LINEAR_SPEED        7000
     #define MAX_SPEED               12000
     #define CHS_KP                  6.5f
-    #define CHS_KI                  0.5f
-    #define CHS_KD                  1.0f
-    #define CHS_INT_LIM             100000
+    #define CHS_KI                  0.7f
+    #define CHS_KD                  1.3f
+    #define CHS_INT_LIM             5000
     #define ROTATE_KP               3.5f
 
 #elif defined(INFANTRY3)
@@ -92,7 +92,7 @@
     #define POKER_ID                0x208
     #define POKER_CAN               CAN1_ID
     #define POKER_TYPE              M2006
-    #define FLYWHL_OUTPUT           220
+    #define FLYWHL_OUTPUT           200
     /* gimbal related */
     #define INIT_MIDDLE_YAW         6260 // these data are measured on infantry2.
     #define EVASIVE_LEFTMOST_YAW    7500
@@ -103,12 +103,12 @@
     /* chassis related */
     #define MAX_TURN_SPEED          3000
     #define EVASIVE_TURN_SPEED      2000
-    #define MAX_LINEAR_SPEED        4000
+    #define MAX_LINEAR_SPEED        7000
     #define MAX_SPEED               12000
     #define CHS_KP                  6.5f
-    #define CHS_KI                  0.5f
-    #define CHS_KD                  1.0f
-    #define CHS_INT_LIM             100000
+    #define CHS_KI                  0.7f
+    #define CHS_KD                  1.3f
+    #define CHS_INT_LIM             5000
     #define ROTATE_KP               3.5f
 
 #elif defined(ENGINEERING)
@@ -133,7 +133,7 @@
     #define CHS_KP                  7
     #define CHS_KI                  0.9f
     #define CHS_KD                  1.0f
-    #define CHS_INT_LIM             80000
+    #define CHS_INT_LIM             5000
     #define ROTATE_KP               7.8f
 
 #elif defined(HERO)
@@ -156,21 +156,21 @@
     #define REAR_LIFT_Port                  MOS_CTL4_GPIO_Port
     /* gimbal related */
     #define INIT_MIDDLE_YAW         4650 // these data are measured on infantry2.
-    #define EVASIVE_LEFTMOST_YAW    5400
-    #define EVASIVE_RIGHTMOST_YAW   3900
+    #define EVASIVE_LEFTMOST_YAW    5550
+    #define EVASIVE_RIGHTMOST_YAW   3750
     #define INIT_MIDDLE_PITCH       2400
     #define PITCH_LOW_LIMIT         1600
     #define PITCH_HIGH_LIMIT        3100
     /* chassis related */
-    #define MAX_TURN_SPEED          3000
-    #define EVASIVE_TURN_SPEED      2000
-    #define MAX_LINEAR_SPEED        4000
+    #define MAX_TURN_SPEED          2000
+    #define EVASIVE_TURN_SPEED      1500
+    #define MAX_LINEAR_SPEED        2500
     #define MAX_SPEED               12000
-    #define CHS_KP                  6.5f
-    #define CHS_KI                  0.5f
-    #define CHS_KD                  1.0f
-    #define CHS_INT_LIM             100000
-    #define ROTATE_KP               3.5f
+    #define CHS_KP                  6.2f
+    #define CHS_KI                  0.6f
+    #define CHS_KD                  1.2f
+    #define CHS_INT_LIM             5000
+    #define ROTATE_KP               2.5f
 #endif
 
 #define IMU_DT          0.001f    // measurement time interval (in seconds). RTOS should give exact time to me.
