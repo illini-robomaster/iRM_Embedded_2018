@@ -49,9 +49,10 @@ file(GLOB_RECURSE LIB_SOURCES
         Drivers/STM32F4xx_HAL_Driver/Src/*.c
         )
 
+file(GLOB_RECURSE USER_SOURCES_TASK Tasks/*.c)
+
 file(GLOB_RECURSE USER_SOURCES_BSP Applications/BSP/*.c)
 file(GLOB_RECURSE USER_SOURCES_LIB Applications/Libraries/*.c)
-file(GLOB_RECURSE USER_SOURCES_TASK Applications/Tasks/*.c)
 file(GLOB_RECURSE USER_SOURCES_TEST Applications/Tests/*.c)
 file(GLOB_RECURSE USER_SOURCES_TPLIB Applications/Third_Party_Libraries/*.c)
 file(GLOB_RECURSE CMSIS_STARTUP startup/startup_stm32f427xx.s)
@@ -71,10 +72,10 @@ include_directories(Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS)
 include_directories(Middlewares/Third_Party/FatFs/src/drivers)
 include_directories(Middlewares/Third_Party/FatFs/src)
 include_directories(Configs)
+include_directories(Tasks)
 include_directories(Applications)
 include_directories(Applications/BSP)
 include_directories(Applications/Libraries)
-include_directories(Applications/Tasks)
 include_directories(Applications/Tests)
 include_directories(Applications/Third_Party_Libraries)
 include_directories(Applications/Third_Party_Libraries/VL53L0X/core/inc)
