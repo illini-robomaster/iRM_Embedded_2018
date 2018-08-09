@@ -14,11 +14,13 @@ git clone --recursive https://github.com/illini-robomaster/iRM_Embedded_2018.git
 
 * [Configs](https://github.com/illini-robomaster/iRM_Embedded_2018/tree/master/Configs) - Board Specific / Robot Specific configuration headers
 
+* [Tasks](https://github.com/illini-robomaster/iRM_Embedded_2018/tree/master/Tasks) - High level customized control logics built on top of our Generic Libraries
+
 * [STM32F427xx.cmake](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/STM32F427xx.cmake) - CMake Toolchain File
 
 * iRM\_Embedded\_2018.ioc - Hardware Pin Definitions for STM32CubeMX to generate driver level source codes
 
-* HAL / Driver Level Libs - Should NOT Be Modified
+* HAL / Driver Level Libs - Should NOT Be Modified By Hand
 	* Inc / Src - Header & source files for HAL libraries
 	* Middlewares - FreeRTOS, FatFS, and other 3rd party libraries
 	* Drivers - Low Level Drivers
