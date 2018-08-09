@@ -26,7 +26,7 @@ git clone --recursive https://github.com/illini-robomaster/iRM_Embedded_2018.git
 	* Drivers - Low Level Drivers
 
 ## IDE Choices
-* CLion - recommanded for under experienced coder
+* CLion - recommanded for under experienced programmers
 	- [x] CMake Integration
 	- [x] Auto Completion
 
@@ -54,3 +54,10 @@ git clone --recursive https://github.com/illini-robomaster/iRM_Embedded_2018.git
 * [How to compile the code](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/COMPILE.md)
 * [How to flash binary files onto the micro controller](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/FLASH.md)
 * [How to use gbd with on chip debugger](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/DEBUG.md)
+* How to generate documentations
+	1. run the following commands in your terminal  
+	```
+	cd <path to iRM_Embedded_2018> && doxygen Doxyfile
+	```
+	2. open `iRM_Embedded_2018/html/index.html` in a browser
+	3. under `Modules` you should see `BSP Library` and `User Library`
