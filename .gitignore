@@ -143,5 +143,8 @@ data_history/
 # CMake Compile Commands
 compile_commands.json
 
+# Clion
+.idea
+
 # Build result
 *.bin
