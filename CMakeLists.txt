@@ -23,7 +23,7 @@ set(MCU_LINKER_SCRIPT STM32F427IIHx_FLASH.ld)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 set(CMAKE_CXX_FLAGS -lm)
 
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.1)
 
 project(${PRJ_NAME} C ASM)
 

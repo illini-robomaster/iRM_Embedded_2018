@@ -49,6 +49,8 @@ git clone --recursive https://github.com/illini-robomaster/iRM_Embedded_2018.git
 
 * [OpenOCD]() - optional for debug purposes
 
+* ST-Link-V2 / ST-Link-V2.1 Program Uploader
+
 ## Tutorials
 * [How to install ARM Toolchain](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/ARM_TOOLCHAIN.md)
 * [How to compile the code](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/COMPILE.md)

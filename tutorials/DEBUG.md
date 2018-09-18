@@ -10,7 +10,7 @@ simply by enabling the debug flag when compiling the code - `make infantry1 DEBU
 * [openocd](http://openocd.org/)
 
 ### Debug Steps
-1. run `openocd -f iRM_Embedded_2018/stm32f427.cfg` in your terminal
+1. run `openocd -f iRM_Embedded_2018/<st-link-version>.cfg` in your terminal, where `<st-link-version>` can be choosen from `[st-link-v2.cfg, st-link-v2-1.cfg]` depending on the version of your st-link program uploader.
 2. in a new terminal window run `arm-none-eabi-gdb <your bin file>`
 3. inside gdb run `target extended-remote :3333` or `tar ext :3333` in short, to connect to your `openocd` server
 4. run `load` inside arm-gdb will flash the program onto the chip
