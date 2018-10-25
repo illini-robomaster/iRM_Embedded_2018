@@ -11,7 +11,7 @@ simply by enabling the debug flag when compiling the code - `make infantry1 DEBU
 
 ### Debug Steps
 1. run `openocd -f iRM_Embedded_2018/<st-link-version>.cfg` in your terminal, where `<st-link-version>` can be choosen from `[st-link-v2.cfg, st-link-v2-1.cfg]` depending on the version of your st-link program uploader.
-2. in a new terminal window run `arm-none-eabi-gdb <your bin file>`
+2. in a new terminal window run `arm-none-eabi-gdb <your elf file>`
 3. inside gdb run `target extended-remote :3333` or `tar ext :3333` in short, to connect to your `openocd` server
 4. run `load` inside arm-gdb will flash the program onto the chip
 5. just like regular `gdb` debugger, commands like `continue`, `run`, `break`, `watch`, `next`, `step` all works the same way.
