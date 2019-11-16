@@ -29,4 +29,4 @@
 Note: before switching to building a different robot, your should clean up your build directory by `rm -rf build/`
 
 ## What's Next?
-[How To Flash These Compiled Binaries](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/COMPILE.md)
+[How To Flash These Compiled Binaries](https://github.com/illini-robomaster/iRM_Embedded_2018/blob/master/tutorials/FLASH.md)
